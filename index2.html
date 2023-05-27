@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input-Validation</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- picture -->
+      <div class="pic-wrapper">
+        <img src="https://i.postimg.cc/9QpzGZk3/vector.png" alt="vector" />
+      </div>
+      <!-- form -->
+      <div class="form-wrapper">
+        <form action="#" method="get">
+          <div class="input-container">
+            <div class="inp-wrapper">
+              <label for="phone-number">شماره موبایل</label>
+              <input
+                type="text"
+                name="phone-number"
+                id="phone-number"
+                required
+                autocomplete="off"
+                pattern="09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}"
+              />
+            </div>
+            <small hidden> لطفا شماره موبایل را با فرمت درست وارد کنید</small>
+          </div>
+          <div class="btn-warpper"><button type="submit">ثبت</button></div>
+        </form>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
